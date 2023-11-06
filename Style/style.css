@@ -1,0 +1,488 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+body {
+  background-color: #f0f0f0;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .selfBox,
+.main .aboutMeBox,
+.main .workBox,
+.main .sideProBox {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.main .self,
+.main .aboutMe,
+.main .work,
+.main .sidePro {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 20px;
+}
+
+.main .self .title,
+.main .aboutMe .title,
+.main .work .title,
+.main .sidePro .title {
+  width: 100%;
+  max-width: 800px;
+  margin: 70px 20px 30px 20px;
+}
+
+.main .self .title h3,
+.main .aboutMe .title h3,
+.main .work .title h3,
+.main .sidePro .title h3 {
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  color: #3a3a2f;
+  margin: 15px 0;
+}
+
+.main .self .title p,
+.main .aboutMe .title p,
+.main .work .title p,
+.main .sidePro .title p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #c7c7b5;
+}
+
+.main .selfBox {
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.main .self {
+  max-width: 1000px;
+  min-height: calc(100vh - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .self img {
+  width: 550px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.main .self .selfInfo {
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 65px;
+}
+
+.main .self .selfInfo h2 {
+  font-size: 65px;
+  letter-spacing: 2px;
+  color: #282820;
+  text-align: right;
+  margin: 5px;
+  margin-top: 20vh;
+}
+
+.main .self .selfInfo h3 {
+  font-size: 30px;
+  color: #282820;
+  text-align: right;
+  margin: 5px;
+}
+
+.main .self .selfInfo .ability {
+  width: 100%;
+  text-align: justify;
+  color: #282820;
+  margin: 50px 0 15vh 0;
+}
+
+.main .self .selfInfo .ability span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.main .self .selfInfo .contact {
+  margin: 50px 0;
+  font-size: 20px;
+  text-align: right;
+}
+
+.main .self .selfInfo .contact i {
+  color: #3c2222;
+  border: solid 2px #3c2222;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.main .aboutMeBox {
+  background-color: #8f8c72;
+  min-height: calc(100vh - 30px);
+}
+
+.main .aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e1e1e1;
+}
+
+.main .aboutMe .skill {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .aboutMe .skill .job {
+  width: 50%;
+}
+
+.main .aboutMe .skill .software {
+  width: 50%;
+}
+
+.main .aboutMe .skill .skill-title:hover > h3 span {
+  letter-spacing: 3px;
+}
+
+.main .aboutMe .skill .skill-title:hover > h3 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main .aboutMe .skill .skill-title h3 {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+.main .aboutMe .skill .skill-title h3 span {
+  font-size: 26px;
+  color: #3c2222;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.main .aboutMe .skill i {
+  color: #fcfcfc;
+  background: #3c2222;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.main .aboutMe .skill .job small {
+  display: block;
+  opacity: 0.7;
+}
+
+.main .aboutMe .skill .job ul {
+  margin-top: 25px;
+}
+
+.main .aboutMe .skill .job ul li {
+  list-style: none;
+  position: relative;
+  margin-left: 0px;
+  padding-left: 25px;
+  padding-bottom: 35px;
+}
+
+.main .aboutMe .skill .job ul li:hover::before {
+  -webkit-animation: circle 1.2s infinite;
+          animation: circle 1.2s infinite;
+  cursor: default;
+}
+
+.main .aboutMe .skill .job ul li:hover span {
+  color: #3a3a2f;
+  font-weight: 600;
+  cursor: default;
+}
+
+.main .aboutMe .skill .job ul li:hover small {
+  cursor: default;
+}
+
+@-webkit-keyframes circle {
+  from {
+    -webkit-box-shadow: 0 0 0 0px #4f3a3a;
+            box-shadow: 0 0 0 0px #4f3a3a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 10px rgba(60, 34, 34, 0);
+            box-shadow: 0 0 0 10px rgba(60, 34, 34, 0);
+  }
+}
+
+@keyframes circle {
+  from {
+    -webkit-box-shadow: 0 0 0 0px #4f3a3a;
+            box-shadow: 0 0 0 0px #4f3a3a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 10px rgba(60, 34, 34, 0);
+            box-shadow: 0 0 0 10px rgba(60, 34, 34, 0);
+  }
+}
+
+.main .aboutMe .skill .job ul li:first-of-type::before {
+  width: 10px;
+  height: 10px;
+  left: -2px;
+}
+
+.main .aboutMe .skill .job ul li:last-of-type {
+  padding-bottom: 3px;
+}
+
+.main .aboutMe .skill .job ul li:last-of-type::after {
+  border-radius: 1.5px;
+}
+
+.main .aboutMe .skill .job ul li::before,
+.main .aboutMe .skill .job ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.main .aboutMe .skill .job ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid #3c2222;
+  background: #fcfcfc;
+  border-radius: 50%;
+  left: 0;
+  z-index: 1;
+}
+
+.main .aboutMe .skill .job ul li::after {
+  width: 3px;
+  height: 100%;
+  background: #3c2222;
+  left: 5px;
+  top: 0;
+}
+
+.main .aboutMe .skill .job ul li span {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  font-size: 20px;
+}
+
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.main .aboutMe .skill .progress {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.main .aboutMe .skill .progress > li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #fcfcfc;
+  font-weight: 100;
+  margin: 7px 15px;
+}
+
+.main .aboutMe .skill .progress > li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: 33px;
+  font-weight: 400;
+}
+
+.main .aboutMe .skill .progress > li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  left: 0;
+  font-size: 28px;
+  font-family: Lato !important;
+  text-align: center;
+}
+
+.main .aboutMe .skill .progress svg {
+  width: 7rem;
+  height: 7rem;
+}
+
+.main .aboutMe .skill .progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.main .aboutMe .skill .progress svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: #8f8c72;
+  opacity: .9;
+  -webkit-animation: load 10s;
+          animation: load 10s;
+}
+
+.main .workBox {
+  min-height: 500px;
+}
+
+.main .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .work .workWall {
+  width: 100%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .work .workWall .workItem {
+  width: calc(50% - 40px);
+  margin: 10px 20px;
+}
+
+.main .work .workWall .workItem img {
+  width: 100%;
+  max-width: 450px;
+  max-height: 350px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main .work .workWall .workItem .btn {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.main .work .workWall .workItem .btn:hover {
+  color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: .7;
+}
+
+.main .work .workWall .workItem .describe {
+  padding: 10px 0;
+}
+
+.main .work .workWall .workItem .describe a {
+  text-decoration: none;
+  color: #3c2222;
+  display: inline-block;
+}
+
+.main .work .workWall .workItem .describe .workTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3c2222;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.main .work .workWall .workItem .describe .shortDes {
+  font-size: 16px;
+  letter-spacing: .5px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.main .work .workWall .workItem .describe p {
+  color: #a4a4a4;
+}
+/*# sourceMappingURL=style.css.map */
