@@ -1,49 +1,34 @@
 .navBox {
   width: 100%;
   height: 60px;
-  background-color: #898560;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(137, 133, 96);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   z-index: 99;
-  -webkit-box-shadow: rgba(57, 57, 57, 0.2) 0px 2px 8px 0px;
-          box-shadow: rgba(57, 57, 57, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(57, 57, 57, 0.2) 0px 2px 8px 0px;
 }
-
 .navBox .nav {
   width: 100%;
   max-width: 1400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .navBox .nav a {
   line-height: 60px;
   font-size: 20px;
   font-weight: 600;
-  color: #282820;
+  color: rgb(40, 40, 32);
   padding: 5px 20px;
 }
-
 .navBox .nav .icon {
   padding-left: 50px;
   font-size: 32px;
-  color: #282820;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(40, 40, 32);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
 .navBox .nav ul {
   padding: 0;
   list-style: none;
@@ -51,12 +36,10 @@
   width: 600px;
   text-align: center;
 }
-
 .navBox .nav li {
   display: table-cell;
   position: relative;
 }
-
 .navBox .nav .category:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 12px;
@@ -66,19 +49,15 @@
   left: 50%;
   position: absolute;
   background: #fff;
-  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-
 .navBox .nav .category:hover:after {
   width: 80%;
   left: 10%;
 }
-
 @media screen and (max-height: 300px) {
   .navBox .nav ul {
     margin-top: 40px;
   }
-}
-/*# sourceMappingURL=nav.css.map */
+}/*# sourceMappingURL=nav.css.map */
