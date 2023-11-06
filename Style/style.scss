@@ -4,7 +4,6 @@ body {
 
 .main {
     width: 100%;
-    // background-image: url(Image/self.webp);
 
     .selfBox,
     .aboutMeBox,
@@ -59,6 +58,17 @@ body {
         background-position: center;
         background-size: cover;
     }
+    @media (max-width: 450px) {
+        .self{
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 60px;
+
+            .selfInfo{
+                width: 80%;
+            }
+        }    
+    }
 
     .self {
         max-width: 1000px;
@@ -66,14 +76,14 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
         img {
-            width: 550px;
-            height: max-content;
+            width: 55%;
+            height: auto;
         }
 
         .selfInfo {
-            width: 100%;
+            width: 45%;
             padding-right: 50px;
             padding-left: 65px;
 
@@ -107,6 +117,7 @@ body {
                     line-height: 28px;
                 }
             }
+
             .contact {
                 margin: 50px 0;
                 font-size: 20px;
@@ -154,11 +165,11 @@ body {
             }
 
             // TimeLine
-            .skill-title:hover > h3 span {
+            .skill-title:hover>h3 span {
                 letter-spacing: 3px;
             }
 
-            .skill-title:hover > h3 {
+            .skill-title:hover>h3 {
                 transform: scale(1.2);
             }
 
@@ -285,6 +296,7 @@ body {
             .job ul li span {
                 transition-duration: 0.3s;
                 font-size: 20px;
+                line-height: 25px;
             }
 
             // software circle
@@ -303,7 +315,7 @@ body {
                 text-align: center;
                 margin: 0;
 
-                & > li {
+                &>li {
                     display: inline-block;
                     position: relative;
                     text-align: center;
@@ -369,6 +381,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 50px;
 
         .workWall {
             width: 100%;
@@ -427,5 +440,89 @@ body {
                 }
             }
         }
+
+        .artWall {
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 50px;
+            display: flex;
+            gap: 4px;
+            justify-content: space-between;
+
+            .art-col {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                justify-content: space-between;
+            }
+
+            .art-col1-top {
+                display: flex;
+                gap: 4px;
+            }
+
+            .art-col2 {
+                display: flex;
+                gap: 4px;
+            }
+
+            .artimg {
+                box-sizing: border-box;
+                position: relative;
+                overflow: hidden;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                  }
+
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                    }
+                    .artcontent{
+                        bottom: 5%;
+                        opacity: 1;
+                    }
+                }
+
+                .artcontent{
+                    margin: 0;
+                    position: absolute;
+                    left: 5%;
+                    bottom: -40px;
+                    font-size: 1.2em;
+                    line-height: 18px;
+                    opacity: 0;
+                    color: #fff;
+                    transition: all .3s, opacity .6s;
+                    
+                    span{
+                        font-size: .8em;
+                        display: block;
+                        font-family: Lato !important;
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+
+    .sidePro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

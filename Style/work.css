@@ -1,41 +1,55 @@
 body {
-  background-color: rgb(240, 240, 240);
+  background-color: #f0f0f0;
 }
 
 .introBox {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 60px;
 }
+
 .introBox .intro {
   width: 100%;
   height: 100vh;
   max-width: 1000px;
   padding: 0 50px;
 }
+
 .introBox .intro .workIntro {
   width: 100%;
   margin: 120px 0 60px 0;
   padding-left: 50px;
 }
+
 .introBox .intro .workIntro h1 {
   font-size: 50px;
   letter-spacing: 1.5px;
-  color: rgb(60, 34, 34);
+  color: #3c2222;
   margin: 8px 0;
 }
+
 .introBox .intro .workIntro h4 {
   font-size: 18px;
   letter-spacing: 1.5px;
-  color: rgb(190, 182, 182);
+  color: #beb6b6;
   margin: 8px 0;
 }
+
 .introBox .intro .workDesc {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .introBox .intro .workDesc p {
   line-height: 25px;
   text-align: justify;
@@ -45,50 +59,71 @@ body {
   padding: 0 25px 0 50px;
   margin: 10px 5vh 0 0;
 }
+
 .introBox .intro .workDesc .member {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
 }
+
 .introBox .intro .workDesc .member ul {
   list-style: none;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
   margin: 0;
   width: calc(50% - 10px);
 }
+
 .introBox .intro .workDesc .member ul span {
   font-size: 16px;
   font-weight: bold;
   line-height: 40px;
-  color: rgb(79, 92, 37);
+  color: #4f5c25;
   padding-bottom: 3px;
-  border-bottom: solid 1px rgb(79, 92, 37);
+  border-bottom: solid 1px #4f5c25;
 }
+
 .introBox .intro .workDesc .member ul li {
   line-height: 25px;
 }
 
 .main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 20px 50px 20px;
 }
+
 .main span {
   max-width: 800px;
   margin: 40px 0 20px 0;
   font-size: 25px;
-  color: rgb(60, 34, 34);
+  color: #3c2222;
   font-weight: bold;
   text-align: center;
   line-height: 35px;
   padding: 0 7px;
-  border-bottom: solid 2px rgb(79, 92, 37);
+  border-bottom: solid 2px #4f5c25;
 }
+
 .main img {
   width: 100%;
   max-width: 900px;
   margin: 10px 20px;
-}/*# sourceMappingURL=work.css.map */
+}
+/*# sourceMappingURL=work.css.map */
