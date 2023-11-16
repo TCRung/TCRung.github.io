@@ -1,4 +1,4 @@
-$('#back-to-top').load('backtotop.html', function () {
+$('#back-to-top').load('/backtotop.html', function () {
     var progressPath = $('.progress-wrap path')[0];
     var pathLength = progressPath.getTotalLength();
     $(progressPath).css('transition', 'none').css('WebkitTransition', 'none');
