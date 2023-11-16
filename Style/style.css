@@ -628,14 +628,10 @@ body {
       flex-wrap: wrap;
 }
 
-.main .work .graphicArt a {
-  height: 100%;
-  margin: 15px 25px;
-}
-
 .main .work .graphicArt img {
   max-width: 280px;
   max-height: 350px;
+  margin: 15px 25px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
